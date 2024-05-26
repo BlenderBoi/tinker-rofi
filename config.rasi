@@ -1,0 +1,72 @@
+configuration {
+	modes: "drun,run,window";
+	font: "JetBrainsMono Nerd Font 16";
+	show-icons: true;
+	terminal: "rofi-sensible-terminal";
+
+  drun {
+    display-name: " DRun";
+  }
+
+  run {
+    display-name: " Run";
+  }
+
+  window {
+    display-name: " Window";
+  }
+
+	icon-theme: "papirus-icon-theme";
+	case-sensitive: false;
+	sidebar-mode: true;
+	hover-select: true;
+	kb-row-left: "Alt+h";
+	kb-row-right: "Alt+l";
+	kb-row-up: "Up,Alt+k";
+	kb-row-down: "Down,Alt+j";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+
+}
+
+* {
+    scrollbar: true;
+
+    bg: #1a1b26;
+    bg-alt: #232433;
+    fg: #6a6f87;
+    fg-alt: #a9b1d6;
+
+
+    background:                  @bg-alt;
+    background-color:            @bg;
+    foreground:                  @fg;
+    border-color:                @bg;
+    separatorcolor:              @bg-alt;
+    scrollbar-handle:            @fg;
+
+    normal-background:           @bg;
+    normal-foreground:           @fg;
+    alternate-normal-background: @bg;
+    alternate-normal-foreground: @fg;
+    selected-normal-background:  @bg-alt;
+    selected-normal-foreground:  @fg-alt;
+
+    active-background:           @bg;
+    active-foreground:           @fg;
+    alternate-active-background: @bg-alt;
+    alternate-active-foreground: @fg-alt;
+    selected-active-background:  @bg-alt;
+    selected-active-foreground:  @fg-alt;
+
+    padding: 10px;
+    margin: 2px;
+
+}
+
